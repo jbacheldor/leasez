@@ -7,6 +7,8 @@ import { Compare } from './Pages/Compare';
 import { Header } from './Components/Header';
 import { Navigation } from './Components/Navigation';
 import { SideSheetContext } from './Contexts/sideSheetContext';
+import { Box, Grid } from '@mui/material';
+import "../src/Components/header.style.css";
 
 export const SwitchRoutes: React.FC = () => {
   return (
@@ -36,14 +38,26 @@ const App: React.FC = () => {
 
   return (
     <Router>
-    <SwitchRoutes/>
     <Header 
       name="Jess"
       OnClick={() => isOpen()}
       />
-    {sideSheetOpen && (
-      <Navigation/>
+    <Grid flex="1 1 auto" className="appGrid">
+    {sideSheetOpen && sideSheetGlobalOpen && (
+        <Box
+        maxWidth="260px"
+        flex="auto"
+        position="relative"
+        zIndex={1000}
+        >
+          <Navigation/>
+        </Box>
     )} 
+    <Box>
+      <SwitchRoutes/>
+    </Box>
+
+    </Grid>
   </Router>
   );
 }
