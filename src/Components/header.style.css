@@ -34,10 +34,6 @@ Box {
     height: 100%;
 }
 
-.Home {
-    overflow: auto;
-}
-
 .appGrid {
     display: flex;
     flex-direction: row;

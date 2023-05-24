@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 export const Navigation: React.FC = () => {
     // const navigate = useNavigate();
 
-    const options = [{Link: "Home", Icon: {HomeOutlinedIcon}},{Link: "Archive", Icon: {TurnedInNotOutlinedIcon}}, {Link: "Compare", Icon: {CompareArrowsOutlinedIcon}}];
+    const options = [{Text: "Home", Link: "/", Icon: {HomeOutlinedIcon}},{Text: "Archive", Link: "Archive", Icon: {TurnedInNotOutlinedIcon}}, {Text: "Compare", Link: "Compare", Icon: {CompareArrowsOutlinedIcon}}];
 
     return (     
         <Box>
@@ -17,7 +17,7 @@ export const Navigation: React.FC = () => {
             {options.map((item, key) => 
                 <div className="items" key={key}> 
                 <Link to = {item.Link}>
-                {item.Link} 
+                {item.Text} 
                 </Link>
                 </div>)}
         </div>

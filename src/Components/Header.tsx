@@ -11,17 +11,6 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({name, OnClick}) => {
 
-    // const [navOpen, setNav] = useState(false);
-
-    // const isOpen = () => {
-    //     if(navOpen === true){
-    //         setNav(false);
-    //     }
-    //     else {
-    //         setNav(true);
-    //     }
-    // }
-
     return (     
         <div className="headerGrid">
             <div className="menuButton">
