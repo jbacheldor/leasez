@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: Ano,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: Ano,Helvetica Neue,Helvetica,Arial,sans-serif,
+  font-family: Helvetica,
     monospace;
 }

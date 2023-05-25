@@ -4,7 +4,7 @@ import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 
 export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     return (
-        <>
+        <div className="card">
         {lease.map(
             ({location, price, beds}, index) => (
         <div className="skinnycard">
@@ -20,7 +20,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             </div>
         </div>
     ),)}
-        </>
+        </div>
     )
 
 }

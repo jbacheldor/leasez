@@ -6,8 +6,6 @@ import { mockData } from "../mock-data/Cards";
 export const Home: React.FC = () => {
 
     return (
-    <>
     <SkinnyCard lease={mockData.SkinnyCardDetailsInput}></SkinnyCard>
-    </>
     );
 }

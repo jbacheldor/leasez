@@ -46,9 +46,9 @@ const App: React.FC = () => {
     {sideSheetOpen && sideSheetGlobalOpen && (
           <Navigation/>
     )} 
-    <Box>
+    <div className="pages">
       <SwitchRoutes/>
-    </Box>
+    </div>
 
     </Grid>
   </Router>

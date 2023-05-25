@@ -1,9 +1,21 @@
 .skinnycard {
     height: 120px;
-    width: 600px;
-    background-color: rgba(74, 206, 206, 0.473);
+    /* width: 600px; */
+    /* background-color: rgba(74, 206, 206, 0.473); */
+    background-color: rgba(74, 206, 206, 0.065);
     border-radius: 30px;
     margin: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(43, 71, 71, 0.408);
+    /* border-color: rgba(74, 206, 206, 0.774); */
+    box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
 }
 
 .leasePicture {
