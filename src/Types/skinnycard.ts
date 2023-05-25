@@ -6,6 +6,8 @@ export interface LeaseBase {
     baths?: number,
     favorite?: boolean,
     isNew?: boolean,
+    // this is for if/when the listing becomes available
+    onMarket?: boolean,
 }
 
 export interface SkinnyCardDetailsInput {

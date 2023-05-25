@@ -1,15 +1,16 @@
-import "./card.style.css";
 import React from "react";
-import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 import { NewFlag } from "../newFlag";
+import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
+import "./squarecard.style.css";
 
-export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
+export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
+
     return (
-        <div className="card">        
+        <div className="cardGrids">        
         {lease.map(
             ({location, price, beds, isNew}, index) => (
-        <div className="skinnycard" key={index}>
-            <div className="flagPosition">
+        <div className="squarecard" key={index}>
+            <div className="flagPositionSquare">
             {isNew && (
                 <NewFlag/>
             )}
@@ -27,6 +28,5 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
         </div>
     ),)}
         </div>
-    )
-
+    );
 }
