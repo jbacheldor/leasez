@@ -55,3 +55,9 @@ html,body {
     flex: 0 1 0;
     margin: 20px;
 }
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}

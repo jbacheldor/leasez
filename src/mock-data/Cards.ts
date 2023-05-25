@@ -6,6 +6,16 @@ export const mockData = {
         beds: 3,
         baths: 1.5,
         favorite: false,
+        isNew: false,
+    },
+    {
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+        isNew: true,
     },
     {
         location: "bushwick",
@@ -22,6 +32,7 @@ export const mockData = {
         beds: 3,
         baths: 1.5,
         favorite: false,
+        isNew: true,
     },
     {
         location: "bushwick",
@@ -30,13 +41,6 @@ export const mockData = {
         beds: 3,
         baths: 1.5,
         favorite: false,
-    },
-    {
-        location: "bushwick",
-        streetAddress: "24 cornelia st",
-        price: 5500,
-        beds: 3,
-        baths: 1.5,
-        favorite: false,
+        isNew: false,
     }],
 }

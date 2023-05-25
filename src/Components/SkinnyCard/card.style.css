@@ -12,6 +12,13 @@
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
 }
 
+.flagPosition {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
 .card {
     display: flex;
     flex-direction: column;

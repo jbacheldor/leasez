@@ -5,6 +5,7 @@ export interface LeaseBase {
     beds?: number,
     baths?: number,
     favorite?: boolean,
+    isNew?: boolean,
 }
 
 export interface SkinnyCardDetailsInput {
