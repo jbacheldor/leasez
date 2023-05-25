@@ -9,6 +9,7 @@ import { Navigation } from './Components/Navigation';
 import { SideSheetContext } from './Contexts/sideSheetContext';
 import { Box, Grid } from '@mui/material';
 import "../src/Components/header.style.css";
+import { CardViewProvider } from './Contexts/cardViewContext';
 
 export const SwitchRoutes: React.FC = () => {
   return (
@@ -42,6 +43,7 @@ const App: React.FC = () => {
       name="Jess"
       OnClick={() => isOpen()}
       />
+    <CardViewProvider>
     <Grid flex="1 1 auto" className="appGrid">
     {sideSheetOpen && sideSheetGlobalOpen && (
           <Navigation/>
@@ -51,6 +53,7 @@ const App: React.FC = () => {
     </div>
 
     </Grid>
+    </CardViewProvider>
   </Router>
   );
 }

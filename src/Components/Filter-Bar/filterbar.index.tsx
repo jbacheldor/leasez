@@ -1,10 +1,11 @@
 import "./filterbar.style.css";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import { SearchBar } from "./search-box";
 import { IconWrapper } from "../filter-wrapper";
+import { CardViewContext } from "../../Contexts/cardViewContext";
 
 export const FilterBar:React.FC = () => {
     const [isFilterOpen, setFilterOpen] = useState(false);
@@ -20,8 +21,15 @@ export const FilterBar:React.FC = () => {
         }
     }
 
+    const {cardViewGlobalSkinny, setCardViewGlobalSkinny} = React.useContext(CardViewContext);
+
     const changeCardView = () => {
-        console.log("Not implemented yet! Need global provider");
+        if(cardViewGlobalSkinny){
+            setCardViewGlobalSkinny(false);
+        }
+        else {
+            setCardViewGlobalSkinny(true);
+        }
     }
     
 
