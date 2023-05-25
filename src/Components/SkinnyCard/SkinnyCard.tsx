@@ -8,7 +8,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
         <div className="card">        
         {lease.map(
             ({location, price, beds, isNew}, index) => (
-        <div className="skinnycard">
+        <div className="skinnycard" key={index}>
             <div className="flagPosition">
             {isNew && (
                 <NewFlag/>

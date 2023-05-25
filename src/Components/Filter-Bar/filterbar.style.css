@@ -5,6 +5,38 @@
 }
 
 .searchBarGrid {
+    /* padding: 0 10px 0 10px; */
+    background-color:bisque; 
     display: flex;
+}
+
+.filterBar {
+    background-color:bisque; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBar {
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBar {
+   display: flex;
+   flex-direction: row;  
+   align-items: center;
+}
+
+.searchBox {
+    background-color:  rgba(253, 180, 91, 0.388);
+    margin: 10px;
+    min-width: 170px;
+    min-height: 30px;
+    border: none;
+}
+
+.searchIcon {
+    margin: 10px;
 }
