@@ -7,9 +7,7 @@ export const Home: React.FC = () => {
 
     return (
     <>
-    {}
     <SkinnyCard lease={mockData.SkinnyCardDetailsInput}></SkinnyCard>
-    <div>"This"</div>
     </>
     );
 }

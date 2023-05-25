@@ -9,9 +9,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             ({location, price, beds}, index) => (
         <div className="skinnycard">
             <div className ="cardGrid">
-                <div className="img">
-                "Content"
-                </div>
+                <img className="leasePicture" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
                 <div className="data">
                         <div>
                             <div>{location}</div>

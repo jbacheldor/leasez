@@ -6,7 +6,15 @@
     margin: 20px;
 }
 
+.leasePicture {
+    max-width: 70px;
+    max-height: 70px;
+    margin: 5px 20px 0 10px;
+}
+
 .cardGrid {
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
