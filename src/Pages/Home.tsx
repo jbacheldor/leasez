@@ -13,10 +13,10 @@ export const Home: React.FC = () => {
     return (
     <div className="Home">
     <FilterBar/>
-    {isSquareView && 
-        <SquareCard/>
+    {!isSquareView && 
+        <SquareCard lease={mockData.SkinnyCardDetailsInput}/>
     }
-    {!isSquareView &&
+    {isSquareView &&
         <SkinnyCard lease={mockData.SkinnyCardDetailsInput}/>
     }
     </div>
