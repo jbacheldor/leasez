@@ -1,6 +1,6 @@
 import "./card.style.css";
 import React from "react";
-import { LeaseBase, SkinnyCardDetailsInput } from "../../Types/skinnycard";
+import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 
 export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     return (
