@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import "./header.style.css";
-import { Navigation } from "./Navigation";
 
 interface HeaderProps {
     name: string;
@@ -12,13 +11,15 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({name, OnClick}) => {
 
     return (     
-        <div className="headerGrid">
+        <Grid className="headerGrid">
             <div className="menuButton">
             <Button  onClick={OnClick}>
                 <MenuIcon/> 
             </Button>
+            </div>
+            <div className="welcomeBanner">
             <p>Hello {name}</p>
             </div>
-        </div>
+        </Grid>
     );
 }

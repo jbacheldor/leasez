@@ -7,7 +7,7 @@ html,body {
     flex-direction: column;
     width: 200px;
     height: 100vh;
-    background-color: rgba(4, 59, 92, .05);
+    background-color: rgba(44, 140, 200, 0.2);
     justify-content: flex-start;
     align-items: center;
 }
@@ -22,19 +22,19 @@ html,body {
 
 .headerGrid {
     width: 100%;
-    background-color: rgba(4, 59, 92, .05);
+    background-color: rgba(44, 140, 200, 0.2);
     height: 90px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-}
-
-Box {
-    max-width: 260px;
-    height: 100%;
+    flex: "1 1 auto";
 }
 
 .appGrid {
     display: flex;
     flex-direction: row;
+}
+
+.welcomeBanner {
+    align-items: end;
+    width: 100px;
 }

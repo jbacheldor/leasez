@@ -44,14 +44,7 @@ const App: React.FC = () => {
       />
     <Grid flex="1 1 auto" className="appGrid">
     {sideSheetOpen && sideSheetGlobalOpen && (
-        <Box
-        maxWidth="260px"
-        flex="auto"
-        position="relative"
-        zIndex={1000}
-        >
           <Navigation/>
-        </Box>
     )} 
     <Box>
       <SwitchRoutes/>

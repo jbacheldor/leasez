@@ -1,0 +1,42 @@
+export const mockData = {
+    SkinnyCardDetailsInput: [{
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+    },
+    {
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+    },
+    {
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+    },
+    {
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+    },
+    {
+        location: "bushwick",
+        streetAddress: "24 cornelia st",
+        price: 5500,
+        beds: 3,
+        baths: 1.5,
+        favorite: false,
+    }],
+}
