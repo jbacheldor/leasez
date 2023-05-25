@@ -1,7 +1,14 @@
 .flagBox {
-    background-color: aqua;
+    background-color: rgb(84, 150, 249);
+    color: white;
     border-radius: 10px;
-    flex: 0 1 auto;
+    padding: 3px;
+    min-height: 30px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .searchBarGrid {
