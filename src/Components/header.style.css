@@ -3,6 +3,16 @@ html,body {
     flex: 1 0 auto;
 }
 
+a {
+    color:rgba(13, 111, 172, 0.877);
+    text-decoration: none;
+    size: 50em;
+    cursor: pointer;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+
 .grid {
     display: flex;
     flex-direction: column;
@@ -20,6 +30,7 @@ html,body {
 
 .items {
     margin: 10px;
+    margin-bottom: 30px;
 }
 
 .headerGrid {
