@@ -5,6 +5,7 @@ import { mockData } from "../mock-data/Cards";
 import { FilterBar } from "../Components/Filter-Bar/filterbar.index";
 import { SquareCard } from "../Components/SquareCard/sqaurecard.index";
 import { CardViewContext } from "../Contexts/cardViewContext";
+import { Pagination } from "../Components/Pagination/pagination";
 
 export const Home: React.FC = () => {
     // include global state & provider here that checks what is selected
@@ -16,6 +17,7 @@ export const Home: React.FC = () => {
     return (
         <div className="Home">
         <FilterBar/>
+        <Pagination/>
         {!cardViewGlobalSkinny && 
             <SquareCard lease={mockData.SkinnyCardDetailsInput}/>
         }
