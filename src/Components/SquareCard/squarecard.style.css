@@ -11,6 +11,15 @@
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
 }
 
+.heartlocation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+
 .flagPositionSquare {
     display: flex;
     align-items: flex-end;

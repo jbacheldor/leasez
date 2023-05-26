@@ -21,6 +21,13 @@
     right: 0;
 }
 
+.heartlocation {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 15px;
+}
+
 
 .card {
     display: flex;

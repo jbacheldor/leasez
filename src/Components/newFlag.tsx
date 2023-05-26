@@ -5,7 +5,7 @@ export const NewFlag:React.FC = () => {
 
     return (
         <div className="flagBox">
-            New
+            NEW
         </div>
     );
 }

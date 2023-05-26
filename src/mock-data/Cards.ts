@@ -23,7 +23,7 @@ export const mockData = {
         price: 5500,
         beds: 3,
         baths: 1.5,
-        favorite: false,
+        favorite: true,
     },
     {
         location: "bushwick",
@@ -40,7 +40,7 @@ export const mockData = {
         price: 5500,
         beds: 3,
         baths: 1.5,
-        favorite: false,
+        favorite: true,
         isNew: false,
     }],
 }

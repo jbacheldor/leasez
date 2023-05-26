@@ -1,5 +1,6 @@
 html,body {
     height: 100%;
+    flex: 1 0 auto;
 }
 
 .grid {
@@ -28,6 +29,7 @@ html,body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex: 1 0 auto;
 }
 
 .appGrid {
