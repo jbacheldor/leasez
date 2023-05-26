@@ -27,6 +27,8 @@
     position: absolute;
     margin: 15px;
     padding-right: 10px;
+    flex-direction: row;
+    display: flex;
 }
 
 .archiveButton {

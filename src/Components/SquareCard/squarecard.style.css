@@ -1,6 +1,6 @@
 .squarecard {
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 260px;
+    min-width: 260px;
     background-color: rgba(74, 206, 206, 0.065);
     border-radius: 30px;
     margin: 20px;
@@ -11,23 +11,19 @@
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
 }
 
-.heartlocation{
+.heartlocationSq{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    right: 0;
-    position: absolute;
-    bottom: 0;
+    flex: 1 0 auto;
 }
 
 .flagPositionSquare {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    padding-left: 180px;
-    padding-bottom: 10%;
     flex-direction: column;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
 }
 
 .cardGrids{
@@ -51,10 +47,18 @@
 
 .cardGridSq {
     border-radius: 10px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     margin: 20px;
+    flex: 1 0 auto;
+}
+
+.newFlagSq {
+    padding-left: 180px;
+}
+
+.onMarketFlagSq {
+    padding-left: 150px;
 }

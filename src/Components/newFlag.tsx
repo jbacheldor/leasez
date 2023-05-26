@@ -14,7 +14,7 @@ export const OnMarketFlag:React.FC = () => {
 
     return (
         <div className="onMarketFlagBox">
-            ON MARKET
+            AVAILABLE
         </div>
     );
 };

@@ -15,16 +15,16 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             ({location, price, beds, isNew, favorite, onMarket}, index) => (
         <div className="squarecard" key={index}>
             <div className="flagPositionSquare">
-            <div className="newFlagSq">
-            {isNew && (
-                <NewFlag/>
-            )}
-            </div>
-            <div className="onMarketFlagSq">
-            {onMarket && (
-                <OnMarketFlag/>
-            )}
-            </div>
+             <div className="onMarketFlagSq">
+                {onMarket && (
+                    <OnMarketFlag/>
+                )}
+                </div>
+                <div className="newFlagSq">
+                {isNew && (
+                    <NewFlag/>
+                )}
+                </div>
             </div>
             <div className ="cardGridSq">
                 <img className="leasePicture" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
@@ -35,12 +35,12 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                             <div>{beds}</div>
                         </div>
                 </div>
+                <div className="heartlocationSq">
                 <IconWrapper Icon={<BookmarkBorderRoundedIcon/>} onClick={()=> {console.log("move to archive!")}}/>
-                <div className="heartlocation">
-                {favorite &&
-                    <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {console.log("unfavorited!")}}/>}
-                {!favorite &&
-                    <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {console.log("favorited!")}}/>}
+                    {favorite &&
+                        <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {console.log("unfavorited!")}}/>}
+                    {!favorite &&
+                        <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {console.log("favorited!")}}/>}
             </div>
             </div>
         </div>
