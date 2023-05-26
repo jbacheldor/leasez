@@ -9,6 +9,7 @@
     display: flex;
     border-color: rgba(43, 71, 71, 0.408);
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
+    position: relative;
 }
 
 .flagPosition {
@@ -16,8 +17,8 @@
     align-items: flex-end;
     justify-content: flex-end;
     position: absolute;
-    padding-left: 88%;
-    padding-bottom: 95%;
+    top: 0;
+    right: 0;
 }
 
 

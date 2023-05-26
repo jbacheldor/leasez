@@ -1,6 +1,8 @@
 import React from "react";
 import { NewFlag } from "../newFlag";
 import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
+import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
+import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import "./squarecard.style.css";
 
 export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
