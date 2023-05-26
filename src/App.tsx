@@ -6,10 +6,10 @@ import { Archive } from './Pages/Archive';
 import { Compare } from './Pages/Compare';
 import { Header } from './Components/Header';
 import { Navigation } from './Components/Navigation';
-import { SideSheetContext } from './Contexts/sideSheetContext';
+import { SideSheetContext } from './store/Contexts/sideSheetContext';
 import { Box, Grid } from '@mui/material';
 import "../src/Components/header.style.css";
-import { CardViewProvider } from './Contexts/cardViewContext';
+import { CardViewProvider } from './store/Contexts/cardViewContext';
 
 export const SwitchRoutes: React.FC = () => {
   return (

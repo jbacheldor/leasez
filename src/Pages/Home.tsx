@@ -4,7 +4,7 @@ import "../Components/header.style.css"
 import { mockData } from "../mock-data/Cards";
 import { FilterBar } from "../Components/Filter-Bar/filterbar.index";
 import { SquareCard } from "../Components/SquareCard/sqaurecard.index";
-import { CardViewContext } from "../Contexts/cardViewContext";
+import { CardViewContext } from "../store/Contexts/cardViewContext";
 import { Pagination } from "../Components/Pagination/pagination";
 
 export const Home: React.FC = () => {

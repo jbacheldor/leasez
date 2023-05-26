@@ -5,7 +5,7 @@ import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import { SearchBar } from "./search-box";
 import { IconWrapper } from "../filter-wrapper";
-import { CardViewContext } from "../../Contexts/cardViewContext";
+import { CardViewContext } from "../../store/Contexts/cardViewContext";
 
 export const FilterBar:React.FC = () => {
     const [isFilterOpen, setFilterOpen] = useState(false);
