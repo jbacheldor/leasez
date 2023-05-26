@@ -8,17 +8,6 @@ import { IconWrapper } from "../filter-wrapper";
 
 export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
 
-    const [isFavorite, setFavorite] = useState(false);
-
-    const handleFavorite = (fave: boolean) => {
-        if(fave === true){
-            setFavorite(false);
-        }
-        else {
-            setFavorite(true);
-        }
-    }
-
     return (
         <div className="cardGrids">        
         {lease.map(
@@ -39,10 +28,10 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                         </div>
                 </div>
                 <div className="heartlocation">
-                {isFavorite === favorite &&
-                    <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {handleFavorite(favorite)}}/>}
-                {!isFavorite === favorite &&
-                    <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {handleFavorite(favorite)}}/>}
+                {favorite &&
+                    <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {console.log("unfavorited!")}}/>}
+                {!favorite &&
+                    <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {console.log("favorited!")}}/>}
             </div>
             </div>
         </div>
