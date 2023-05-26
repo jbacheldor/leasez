@@ -1,4 +1,4 @@
-export const mockData = {
+export const jessData = {
     SkinnyCardDetailsInput: [{
         location: "bushwick",
         streetAddress: "24 cornelia st",
@@ -7,7 +7,6 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: false,
-        onMarket: true,
     },
     {
         location: "bushwick",
@@ -17,7 +16,6 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: true,
-        onMarket: false,
     },
     {
         location: "bushwick",
@@ -26,7 +24,6 @@ export const mockData = {
         beds: 3,
         baths: 1.5,
         favorite: true,
-        onMarket: false,
     },
     {
         location: "bushwick",
@@ -36,7 +33,6 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: true,
-        onMarket: true,
     },
     {
         location: "bushwick",
@@ -46,6 +42,5 @@ export const mockData = {
         baths: 1.5,
         favorite: true,
         isNew: false,
-        onMarket: false,
     }],
 }

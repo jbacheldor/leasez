@@ -10,7 +10,7 @@ import { CardViewContext } from "../../Contexts/cardViewContext";
 export const FilterBar:React.FC = () => {
     const [isFilterOpen, setFilterOpen] = useState(false);
 
-    const filters = ["On Market", "New"];
+    const filters = ["AVAILABLE", "NEW"];
 
     const handleFilterOpen = () => {
         if(isFilterOpen) {

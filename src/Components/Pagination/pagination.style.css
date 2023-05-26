@@ -1,0 +1,44 @@
+.paginationMain {
+    background-color: rgba(120, 97, 222, 0.377);
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.rowsPerPage {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options {
+    display: inline-block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    margin: 144px 0 0 0;
+}
+
+.separator {
+    height: 100%;
+    border-left: 2px solid rgba(128, 128, 128, 0.361);
+    margin: 15px;
+}
+
+.dropdown {
+    background-color: rgba(240, 248, 255, 0.66);
+    bottom: 1;
+    padding: 10px;
+}
