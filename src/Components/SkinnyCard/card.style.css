@@ -26,8 +26,12 @@
     right: 0;
     position: absolute;
     margin: 15px;
+    padding-right: 10px;
 }
 
+.archiveButton {
+    padding-right: 10px;
+}
 
 .card {
     display: flex;
@@ -41,7 +45,7 @@
     border-radius: 15px;
 }
 
-.cardGrid {
+.cardGridSk {
     border-radius: 10px;
     padding: 20px;
     display: flex;

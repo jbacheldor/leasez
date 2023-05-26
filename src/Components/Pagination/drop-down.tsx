@@ -8,8 +8,8 @@ export const DropDown:React.FC<DropDownProps> = ({props}) => {
 
     return (
         <div className="dropdown">
-        {props.map((value) =>
-            <div>{value}</div>
+        {props.map((value, key) =>
+            <div key={key}>{value}</div>
         )}
         </div>
     )

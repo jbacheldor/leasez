@@ -7,6 +7,7 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: false,
+        onMarket: true,
     },
     {
         location: "bushwick",
@@ -16,6 +17,7 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: true,
+        onMarket: false,
     },
     {
         location: "bushwick",
@@ -24,6 +26,7 @@ export const mockData = {
         beds: 3,
         baths: 1.5,
         favorite: true,
+        onMarket: false,
     },
     {
         location: "bushwick",
@@ -33,6 +36,7 @@ export const mockData = {
         baths: 1.5,
         favorite: false,
         isNew: true,
+        onMarket: true,
     },
     {
         location: "bushwick",
@@ -42,5 +46,6 @@ export const mockData = {
         baths: 1.5,
         favorite: true,
         isNew: false,
+        onMarket: false,
     }],
 }
