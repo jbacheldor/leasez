@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NewFlag, OnMarketFlag } from "../newFlag";
 import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';

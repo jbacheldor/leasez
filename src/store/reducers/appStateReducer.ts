@@ -1,12 +1,14 @@
+import { IApplicationState } from '../../Types';
 import stateActions, { AppAction } from '../ActionKeys/actionkeys';
-import { ApplicationState, initialState } from '../initialState';
+import { initialState } from '../initialState';
 
 const appStateReducer = (
-    state: ApplicationState = initialState.applicationState,
+    state: IApplicationState = initialState.applicationState,
     action: AppAction, 
-) => {
+): IApplicationState => {
     switch(action.type) {
         case stateActions.NAV_TOGGLE:
+
             return {
                 ...state,
                 navigationOpen: !state.navigationOpen,
@@ -22,7 +24,7 @@ const appStateReducer = (
                 cardViewSkinny: !state.cardViewSkinny,
             };
         default:
-            return {state}
+            return {...state}
     }
 };
 

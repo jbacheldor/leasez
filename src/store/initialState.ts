@@ -1,4 +1,6 @@
-export const initialApplicationState:ApplicationState = {
+import { IApplicationState, IStoreState } from "../Types"
+
+export const initialApplicationState:IApplicationState = {
     loading: false,
     ready: false,
     error: false,
@@ -7,19 +9,6 @@ export const initialApplicationState:ApplicationState = {
     navigationOpen: false,
 }
 
-export interface ApplicationState {
-    readonly loading: boolean;
-    readonly ready: boolean;
-    readonly error: boolean;
-    readonly filterOpen: boolean;
-    readonly cardViewSkinny: boolean;
-    readonly navigationOpen: boolean;
-}
-
-export interface StoreState {
-    readonly applicationState: ApplicationState
-}
-
-export const initialState: StoreState = {
+export const initialState: IStoreState = {
     applicationState: initialApplicationState
 }
