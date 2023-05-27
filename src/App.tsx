@@ -10,9 +10,9 @@ import { Grid } from '@mui/material';
 import "../src/Components/header.style.css";
 import { CardViewProvider } from './store/Contexts/cardViewContext';
 import { useDispatch, useSelector } from 'react-redux';
-import stateActions from './store/ActionKeys/actionkeys';
 import store from './store';
 import { IStoreState } from "./Types";
+import { stateActions } from './store/ActionKeys/actionkeys';
 
 export const SwitchRoutes: React.FC = () => {
   return (

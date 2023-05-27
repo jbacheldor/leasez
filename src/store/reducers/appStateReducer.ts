@@ -1,5 +1,5 @@
-import { IApplicationState } from '../../Types';
-import stateActions, { AppAction } from '../ActionKeys/actionkeys';
+import { AppAction, IApplicationState } from '../../Types';
+import { stateActions } from '../ActionKeys/actionkeys';
 import { initialState } from '../initialState';
 
 const appStateReducer = (

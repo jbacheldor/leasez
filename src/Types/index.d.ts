@@ -16,8 +16,15 @@ interface IApplicationState {
     readonly navigationOpen: boolean;
 }
 
+interface IPaginationState {
+    readonly loading: boolean;
+    readonly currentPage: number;
+    readonly postsPerPage: number;
+}
+
 interface IStoreState {
     readonly applicationState: IApplicationState;
+    readonly paginationState: IPaginationState;
 }
 
 export type AppAction = {
