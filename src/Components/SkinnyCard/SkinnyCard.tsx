@@ -6,12 +6,25 @@ import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import BookmarkBorderRoundedIcon from '@mui/icons-material/BookmarkBorderRounded';
 import { NewFlag, OnMarketFlag } from "../newFlag";
 import { IconWrapper } from "../filter-wrapper";
+import { IStoreState } from "../../Types";
+import { useSelector } from "react-redux";
+import store from "../../store";
+
+const mapStateToProps = (state: IStoreState) => ({
+    paginationState: state.paginationState,
+  });
 
 export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
    
+    const { paginationState } = useSelector(mapStateToProps);
+    const { paginationStateReducer} = store.getState().reducers;
+
+    const beginningPost = paginationStateReducer.postsPerPage * paginationStateReducer.currentPage - 1;
+    const endPost = beginningPost + paginationStateReducer.postsPerPage;
+
     return (
         <div className="card">        
-        {lease.map(
+        {lease.slice(beginningPost, endPost).map(
             ({location, price, beds, isNew, favorite, onMarket}, index) => (
         <div className="skinnycard" key={index}>
             <div className="flagPosition">

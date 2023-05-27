@@ -13,6 +13,7 @@ export const initialPaginationState:IPaginationState = {
     loading: false,
     currentPage: 1,
     postsPerPage: 1,
+    posts: [],
 }
 
 export const initialState: IStoreState = {

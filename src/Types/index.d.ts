@@ -20,6 +20,7 @@ interface IPaginationState {
     readonly loading: boolean;
     readonly currentPage: number;
     readonly postsPerPage: number;
+    readonly posts: [],
 }
 
 interface IStoreState {
