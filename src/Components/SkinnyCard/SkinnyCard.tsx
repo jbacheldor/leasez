@@ -19,8 +19,10 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     const { paginationState } = useSelector(mapStateToProps);
     const { paginationStateReducer} = store.getState().reducers;
 
-    const beginningPost = paginationStateReducer.postsPerPage * paginationStateReducer.currentPage - 1;
+    const beginningPost = paginationStateReducer.postsPerPage * (paginationStateReducer.currentPage - 1);
     const endPost = beginningPost + paginationStateReducer.postsPerPage;
+
+    console.log(beginningPost, endPost);
 
     return (
         <div className="card">        
