@@ -24,7 +24,6 @@ export const Pagination:React.FC = () =>{
     const [dropDownOpen, setDropDown] = useState(false);
 
     const handleClick = () => {
-        console.log(dropDownOpen);
         if(dropDownOpen){
             setDropDown(false);
         }
@@ -32,6 +31,16 @@ export const Pagination:React.FC = () =>{
             setDropDown(true);
         }
     };
+
+    const handleNextPage = () => {
+        console.log("next page");
+        dispatch({paginationState, type: pageActions.NEXT_PAGE});
+    }
+
+    const handleBackPage = () => {
+        console.log("back page");
+        dispatch({paginationState, type: pageActions.BACK_PAGE});
+    }
 
     const rowOptions = [1, 5, 10, 15];
 
@@ -49,9 +58,9 @@ export const Pagination:React.FC = () =>{
             </div>
             <div className="separator"></div>
             <div className="navigation">
-            <IconWrapper Icon={<NavigateBeforeRoundedIcon/>} onClick={() => {console.log("back!")}}/>
+            <IconWrapper Icon={<NavigateBeforeRoundedIcon/>} onClick={handleBackPage}/>
             {paginationStateReducer.currentPage}
-            <IconWrapper Icon={<NavigateNextRoundedIcon/>} onClick={() => {console.log("next!")}}/>
+            <IconWrapper Icon={<NavigateNextRoundedIcon/>} onClick={handleNextPage}/>
             </div>
         </div>
     );
