@@ -22,8 +22,6 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     const beginningPost = paginationStateReducer.postsPerPage * (paginationStateReducer.currentPage - 1);
     const endPost = beginningPost + paginationStateReducer.postsPerPage;
 
-    console.log(beginningPost, endPost);
-
 
     return (
         <div className="cardGrids">        

@@ -33,7 +33,6 @@ const App: React.FC = () => {
   // app state is returning undefined but acting almost as a subscriber?
   // the function won't work if this isn't here
   const { appState } = useSelector(mapStateToProps);
-  console.log("use selector state", appState);
 
  const {appStateReducer} = store.getState().reducers;
 
