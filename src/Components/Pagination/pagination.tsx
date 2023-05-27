@@ -33,12 +33,10 @@ export const Pagination:React.FC = () =>{
     };
 
     const handleNextPage = () => {
-        console.log("next page");
         dispatch({paginationState, type: pageActions.NEXT_PAGE});
     }
 
     const handleBackPage = () => {
-        console.log("back page");
         dispatch({paginationState, type: pageActions.BACK_PAGE});
     }
 
