@@ -6,12 +6,28 @@ import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import BookmarkBorderRoundedIcon from '@mui/icons-material/BookmarkBorderRounded';
 import "./squarecard.style.css";
 import { IconWrapper } from "../filter-wrapper";
+import { IStoreState } from "../../Types";
+import { useSelector } from "react-redux";
+import store from "../../store";
+
+const mapStateToProps = (state: IStoreState) => ({
+    paginationState: state.paginationState,
+  });
 
 export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
 
+    const { paginationState } = useSelector(mapStateToProps);
+    const { paginationStateReducer} = store.getState().reducers;
+
+    const beginningPost = paginationStateReducer.postsPerPage * (paginationStateReducer.currentPage - 1);
+    const endPost = beginningPost + paginationStateReducer.postsPerPage;
+
+    console.log(beginningPost, endPost);
+
+
     return (
         <div className="cardGrids">        
-        {lease.map(
+        {lease.slice(beginningPost, endPost).map(
             ({location, price, beds, isNew, favorite, onMarket}, index) => (
         <div className="squarecard" key={index}>
             <div className="flagPositionSquare">
