@@ -6,10 +6,13 @@ import { Archive } from './Pages/Archive';
 import { Compare } from './Pages/Compare';
 import { Header } from './Components/Header';
 import { Navigation } from './Components/Navigation';
-import { SideSheetContext } from './Contexts/sideSheetContext';
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import "../src/Components/header.style.css";
-import { CardViewProvider } from './Contexts/cardViewContext';
+import { CardViewProvider } from './store/Contexts/cardViewContext';
+import { useDispatch, useSelector } from 'react-redux';
+import store from './store';
+import { IStoreState } from "./Types";
+import { stateActions } from './store/ActionKeys/actionkeys';
 
 export const SwitchRoutes: React.FC = () => {
   return (
@@ -21,20 +24,25 @@ export const SwitchRoutes: React.FC = () => {
   )
 }
 
+const mapStateToProps = (state: IStoreState) => ({
+  appState: state.applicationState,
+});
 
 const App: React.FC = () => {
-  const [sideSheetOpen, setSideSheet] = useState(false);
-  const { sideSheetGlobalOpen, setSideSheetGlobalOpen } = useContext(SideSheetContext);
 
+  // app state is returning undefined but acting almost as a subscriber?
+  // the function won't work if this isn't here
+  const { appState } = useSelector(mapStateToProps);
+  console.log("use selector state", appState);
+
+ const {appStateReducer} = store.getState().reducers;
+
+  const dispatch = useDispatch(); 
+
+  // even though appState is undefined here when it sends
+  // it is populated ?? and still works?? 
   const isOpen = () => {
-      if(sideSheetGlobalOpen){
-          setSideSheet(false);
-          setSideSheetGlobalOpen(false);
-      }
-      else {
-          setSideSheet(true);
-          setSideSheetGlobalOpen(true);
-      }
+    dispatch({appState, type: stateActions.NAV_TOGGLE});
   }
 
   return (
@@ -45,7 +53,7 @@ const App: React.FC = () => {
       />
     <CardViewProvider>
     <Grid flex="1 1 auto" className="appGrid">
-    {sideSheetOpen && sideSheetGlobalOpen && (
+    {appStateReducer.navigationOpen && (
           <Navigation/>
     )} 
     <div className="pages">

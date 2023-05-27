@@ -1,0 +1,12 @@
+
+export enum stateActions {
+    NAV_TOGGLE = "NAV_TOGGLE",
+    CARDVIEW_TOGGLE = "CARDVIEW_TOGGLE",
+    FILTER_TOGGLE = "FILTER_TOGGLE"
+}
+
+export enum pageActions {
+    NEXT_PAGE = "NEXT_PAGE",
+    BACK_PAGE = "BACK_PAGE",
+    ADJUST_POSTS_PER_PAGE = "ADJUST_POSTS_PER_PAGE"
+}
