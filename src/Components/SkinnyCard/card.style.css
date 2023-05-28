@@ -54,3 +54,29 @@
     flex-direction: row;
     position: sticky;
 }
+
+.separatorSk {
+    height: 100%;
+    display: flex;
+    border-left: 5px solid rgba(128, 128, 128, 0.772);
+}
+
+.bottomDataSk {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+    bottom: 0;
+}
+
+.bedsSk {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.bathsSk {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

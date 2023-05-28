@@ -4,7 +4,7 @@ import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import BookmarkBorderRoundedIcon from '@mui/icons-material/BookmarkBorderRounded';
-import { NewFlag, OnMarketFlag } from "../newFlag";
+import { NewFlag, NoFeeFlag, OnMarketFlag } from "../newFlag";
 import { IconWrapper } from "../filter-wrapper";
 import { IStoreState } from "../../Types";
 import { useSelector } from "react-redux";
@@ -25,7 +25,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     return (
         <div className="card">        
         {lease.slice(beginningPost, endPost).map(
-            ({location, price, beds, isNew, favorite, onMarket}, index) => (
+            ({location, price, beds, isNew, favorite, onMarket, fee, baths, streetAddress}, index) => (
         <div className="skinnycard" key={index}>
             <div className="flagPosition">
             {onMarket &&
@@ -38,11 +38,29 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             <div className ="cardGridSk">
                 <img className="leasePicture" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
                 <div className="data">
-                        <div>
-                            <div>{location}</div>
-                            <div>{price}</div>
-                            <div>{beds}</div>
-                        </div>
+                <div className="location">{location}</div>
+                    <div className="streetAddress">{streetAddress}</div>
+                    <div className="priceRow">
+                        <div className="price">${price}</div>
+                        {!fee && 
+                            <NoFeeFlag/>
+                        }
+                    </div>
+                <div className="bottomData">
+                {beds == 0 
+                ? <div className="bedsSk">studio</div>
+                : (beds && beds === 1 
+                    ? <div className="bedsSk">{beds} bed</div>
+                    : <div className="bedsSk">{beds} beds</div>
+                )} 
+                <div className="separatorSk"></div> 
+                {baths && baths > 1 && 
+                    <div className="bathsSk">{baths} baths</div> 
+                }
+                {baths && baths === 1 && 
+                    <div className="bathsSk">{baths} bath</div> 
+                } 
+                </div>
                 </div>
             </div>
             <div className="heartlocation">
