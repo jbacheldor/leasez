@@ -7,6 +7,7 @@ import BookmarkBorderRoundedIcon from '@mui/icons-material/BookmarkBorderRounded
 import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
 import OutdoorGrillOutlinedIcon from '@mui/icons-material/OutdoorGrillOutlined';
 import PetsRoundedIcon from '@mui/icons-material/PetsRounded';
+import ParaglidingIcon from '@mui/icons-material/Paragliding';
 import ElevatorOutlinedIcon from '@mui/icons-material/ElevatorOutlined';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import { NewFlag, NoFeeFlag, OnMarketFlag } from "../newFlag";
@@ -85,6 +86,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             <ElevatorOutlinedIcon/>
             <FitnessCenterOutlinedIcon/>
             <OutdoorGrillOutlinedIcon/>
+            <ParaglidingIcon/>
             </div>
             <div className="transitLines">
             Transit Lines:
