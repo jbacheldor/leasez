@@ -40,7 +40,7 @@ export const Pagination:React.FC = () =>{
         dispatch({paginationState, type: pageActions.BACK_PAGE});
     }
 
-    const rowOptions = [1, 5, 10, 15];
+    const rowOptions = [5, 10, 15, 20];
 
     return(
         <div className="paginationMain">

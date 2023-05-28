@@ -12,7 +12,7 @@ export const initialApplicationState:IApplicationState = {
 export const initialPaginationState:IPaginationState = {
     loading: false,
     currentPage: 1,
-    postsPerPage: 1,
+    postsPerPage: 5,
     posts: [],
 }
 
