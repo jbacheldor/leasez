@@ -89,7 +89,7 @@
 
 .leasePicture {
     max-height: 140px;
-    max-width: 140px;
+    max-width: inherit;
     display: flex;
     flex-grow: 1;
     width: 260px;
