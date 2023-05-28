@@ -81,3 +81,28 @@
     max-width: 120px;
     max-height: 120px;
 }
+
+.location {
+    color: rgb(97, 96, 96);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.priceRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 7px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.streetAddress {
+    color: rgb(32, 140, 255);
+
+}

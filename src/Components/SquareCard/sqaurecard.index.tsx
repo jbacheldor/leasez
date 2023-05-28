@@ -1,5 +1,5 @@
 import React from "react";
-import { NewFlag, OnMarketFlag } from "../newFlag";
+import { NewFlag, NoFeeFlag, OnMarketFlag } from "../newFlag";
 import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
@@ -46,8 +46,12 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                         <div className="topData">
                             <div className="location">{location}</div>
                             <div className="streetAddress">{streetAddress}</div>
-                            <div className="price">{price}</div>
-                            <div className="fee">{fee}</div>
+                            <div className="priceRow">
+                                <div className="price">${price}</div>
+                                {!fee && 
+                                    <NoFeeFlag/>
+                                }
+                            </div>
                         </div>
                         <div className="bottomData">
                             {beds && beds === 0 && 

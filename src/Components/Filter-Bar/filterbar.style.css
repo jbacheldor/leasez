@@ -24,6 +24,20 @@
     margin: 10px;
 }
 
+.noFeeFlagBox {
+    background-color: rgba(57, 192, 245, 0.359);
+    color: rgba(0, 0, 0, 0.846);
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 14px;
+    max-width: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
 .searchBarGrid {
     /* padding: 0 10px 0 10px; */
     background-color:bisque; 
