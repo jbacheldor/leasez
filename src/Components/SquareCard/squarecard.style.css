@@ -35,9 +35,11 @@
 }
 
 .separator {
-    height: 100%;
+    height: 70%;
+    display: flex;
+    align-self: normal;
     border-left: 5px solid rgba(128, 128, 128, 0.772);
-    margin: 15px;
+    /* margin: 15px; */
 }
 
 /* Card Data formatting starts here */
@@ -55,6 +57,9 @@
 .bottomData {
     display: flex;
     flex-direction: row;
+    margin: 0 15px 0 0;
+    margin-top: 25px;
+    align-items: center;
 }
 
 .newFlagSq {
@@ -117,4 +122,17 @@
 .streetAddress {
     color: rgb(32, 140, 255);
     font-size: 18px;
+}
+
+.beds {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.baths {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }

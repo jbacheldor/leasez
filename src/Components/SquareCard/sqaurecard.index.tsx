@@ -53,29 +53,29 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                                 }
                             </div>
                         </div>
-                        <div className="bottomData">
-                            {beds == 0 
-                                ? <div className="beds">studio</div>
-                                : (beds && beds === 1 
-                                    ? <div className="beds">{beds} bed</div>
-                                    : <div className="beds">{beds} beds</div>
-                                )} 
-                            <div className="separator"></div> 
-                            {baths && baths > 1 && 
-                                <div className="baths">{baths} baths</div> 
-                            }
-                            {baths && baths === 1 && 
-                                <div className="baths">{baths} bath</div> 
-                            }                 
-                        </div>
                 </div>
+                <div className="bottomData">
+                    {beds == 0 
+                        ? <div className="beds">studio</div>
+                        : (beds && beds === 1 
+                            ? <div className="beds">{beds} bed</div>
+                            : <div className="beds">{beds} beds</div>
+                        )} 
+                    <div className="separator"></div> 
+                    {baths && baths > 1 && 
+                        <div className="baths">{baths} baths</div> 
+                    }
+                    {baths && baths === 1 && 
+                        <div className="baths">{baths} bath</div> 
+                    } 
                 <div className="heartlocationSq">
                 <IconWrapper Icon={<BookmarkBorderRoundedIcon/>} onClick={()=> {console.log("move to archive!")}}/>
                     {favorite &&
                         <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {console.log("unfavorited!")}}/>}
                     {!favorite &&
                         <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {console.log("favorited!")}}/>}
-            </div>
+            </div>                
+                </div>
             </div>
         </div>
     ),)}
