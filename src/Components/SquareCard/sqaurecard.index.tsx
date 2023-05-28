@@ -54,15 +54,12 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                             </div>
                         </div>
                         <div className="bottomData">
-                            {beds && beds === 0 && 
-                                <div className="beds">studio</div>
-                            } 
-                            {beds && beds === 1 && 
-                                <div className="beds">{beds} bed</div>
-                            }
-                            {beds && beds > 1 && 
-                                <div className="beds">{beds} beds</div>
-                            } 
+                            {beds == 0 
+                                ? <div className="beds">studio</div>
+                                : (beds && beds === 1 
+                                    ? <div className="beds">{beds} bed</div>
+                                    : <div className="beds">{beds} beds</div>
+                                )} 
                             <div className="separator"></div> 
                             {baths && baths > 1 && 
                                 <div className="baths">{baths} baths</div> 
