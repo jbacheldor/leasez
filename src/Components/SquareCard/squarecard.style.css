@@ -11,6 +11,57 @@
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
 }
 
+.cardGrids{
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardGridSq {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    flex: 1 0 auto;
+}
+
+.separator {
+    height: 100%;
+    border-left: 5px solid rgba(128, 128, 128, 0.772);
+    margin: 15px;
+}
+
+/* Card Data formatting starts here */
+
+.topData {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomData {
+    display: flex;
+    flex-direction: row;
+}
+
+.newFlagSq {
+    padding-left: 180px;
+}
+
+.onMarketFlagSq {
+    padding-left: 150px;
+}
+
+
 .heartlocationSq{
     display: flex;
     justify-content: flex-end;
@@ -26,39 +77,7 @@
     align-items: flex-start;
 }
 
-.cardGrids{
-    display: flex;
-    flex-direction: row;
-    width: 100vh;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-}
-
 .leasePicture {
     max-width: 120px;
     max-height: 120px;
-}
-
-.cardGridSq {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px;
-    flex: 1 0 auto;
-}
-
-.newFlagSq {
-    padding-left: 180px;
-}
-
-.onMarketFlagSq {
-    padding-left: 150px;
 }

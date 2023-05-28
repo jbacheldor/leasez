@@ -26,7 +26,7 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     return (
         <div className="cardGrids">        
         {lease.slice(beginningPost, endPost).map(
-            ({location, price, beds, isNew, favorite, onMarket}, index) => (
+            ({location, price, beds, isNew, favorite, onMarket, fee, baths, streetAddress}, index) => (
         <div className="squarecard" key={index}>
             <div className="flagPositionSquare">
              <div className="onMarketFlagSq">
@@ -43,10 +43,29 @@ export const SquareCard:React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             <div className ="cardGridSq">
                 <img className="leasePicture" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
                 <div className="data">
-                        <div>
-                            <div>{location}</div>
-                            <div>{price}</div>
-                            <div>{beds}</div>
+                        <div className="topData">
+                            <div className="location">{location}</div>
+                            <div className="streetAddress">{streetAddress}</div>
+                            <div className="price">{price}</div>
+                            <div className="fee">{fee}</div>
+                        </div>
+                        <div className="bottomData">
+                            {beds && beds === 0 && 
+                                <div className="beds">studio</div>
+                            } 
+                            {beds && beds === 1 && 
+                                <div className="beds">{beds} bed</div>
+                            }
+                            {beds && beds > 1 && 
+                                <div className="beds">{beds} beds</div>
+                            } 
+                            <div className="separator"></div> 
+                            {baths && baths > 1 && 
+                                <div className="baths">{baths} baths</div> 
+                            }
+                            {baths && baths === 1 && 
+                                <div className="baths">{baths} bath</div> 
+                            }                 
                         </div>
                 </div>
                 <div className="heartlocationSq">
