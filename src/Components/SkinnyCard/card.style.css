@@ -40,9 +40,10 @@
     flex-direction: column;
 }
 
-.leasePicture {
-    max-width: 80px;
-    max-height: 80px;
+.leasePictureSk {
+    max-width: 160px;
+    height: inherit;
+    max-height: inherit;
     margin: 0 20px 0 10px;
     border-radius: 15px;
 }
@@ -79,4 +80,26 @@
     display: flex;
     margin-left: 10px;
     margin-bottom: 20px;
+}
+
+.AmenitiesGrid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.transitLines {
+
+}
+
+.moveinDateSk {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.additionalInfo {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
 }

@@ -4,6 +4,11 @@ import { SkinnyCardDetailsInput } from "../../Types/skinnycard";
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import BookmarkBorderRoundedIcon from '@mui/icons-material/BookmarkBorderRounded';
+import LocalLaundryServiceOutlinedIcon from '@mui/icons-material/LocalLaundryServiceOutlined';
+import OutdoorGrillOutlinedIcon from '@mui/icons-material/OutdoorGrillOutlined';
+import PetsRoundedIcon from '@mui/icons-material/PetsRounded';
+import ElevatorOutlinedIcon from '@mui/icons-material/ElevatorOutlined';
+import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import { NewFlag, NoFeeFlag, OnMarketFlag } from "../newFlag";
 import { IconWrapper } from "../filter-wrapper";
 import { IStoreState } from "../../Types";
@@ -25,7 +30,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
     return (
         <div className="card">        
         {lease.slice(beginningPost, endPost).map(
-            ({location, price, beds, isNew, favorite, onMarket, fee, baths, streetAddress}, index) => (
+            ({location, price, beds, isNew, favorite, onMarket, fee, baths, streetAddress, moveInDate}, index) => (
         <div className="skinnycard" key={index}>
             <div className="flagPosition">
             {onMarket &&
@@ -36,7 +41,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
             )}
             </div>
             <div className ="cardGridSk">
-                <img className="leasePicture" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
+                <img className="leasePictureSk" src="https://imgjapan.com/wp-content/uploads/2023/03/Kakao-logo-800x800-1.png" />
                 <div className="data">
                 <div className="location">{location}</div>
                     <div className="streetAddress">{streetAddress}</div>
@@ -46,6 +51,7 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                             <NoFeeFlag/>
                         }
                     </div>
+                <div className="moveinDateSk">{moveInDate}</div>
                 <div className="bottomData">
                 {beds == 0 
                 ? <div className="bedsSk">studio</div>
@@ -71,6 +77,18 @@ export const SkinnyCard: React.FC<SkinnyCardDetailsInput> = ({ lease }) => {
                     <IconWrapper Icon={<FavoriteRoundedIcon/>} onClick={() => {console.log("unfavorited!")}}/>}
                 {!favorite &&
                     <IconWrapper Icon={<FavoriteBorderRoundedIcon/>} onClick={()=> {console.log("favorited!")}}/>}
+            </div>
+            <div className="additionalInfo">
+            <div className="AmenitiesGrid">
+            <LocalLaundryServiceOutlinedIcon/>
+            <PetsRoundedIcon/>
+            <ElevatorOutlinedIcon/>
+            <FitnessCenterOutlinedIcon/>
+            <OutdoorGrillOutlinedIcon/>
+            </div>
+            <div className="transitLines">
+            Transit Lines:
+            </div>
             </div>
         </div>
     ),)}

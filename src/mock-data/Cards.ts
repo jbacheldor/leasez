@@ -9,6 +9,7 @@ export const mockData = {
         favorite: false,
         isNew: false,
         onMarket: true,
+        moveInDate: "12/3/2034",
     },
     {
         location: "Williamsburg",
@@ -20,6 +21,7 @@ export const mockData = {
         favorite: false,
         isNew: true,
         onMarket: false,
+        moveInDate: "12/1/2034",
     },
     {
         location: "Fort Green",
@@ -30,6 +32,7 @@ export const mockData = {
         baths: 1.5,
         favorite: true,
         onMarket: false,
+        moveInDate: "2/17/2019",
     },
     {
         location: "Crown Heights",
@@ -41,6 +44,7 @@ export const mockData = {
         favorite: false,
         isNew: true,
         onMarket: true,
+        moveInDate: "12/3/2034",
     },
     {
         location: "Lower East Side",
@@ -52,6 +56,7 @@ export const mockData = {
         favorite: true,
         isNew: false,
         onMarket: false,
+        moveInDate: "12/3/2034",
     },{
         location: "Tribeca",
         streetAddress: "24 cornelia st",
@@ -62,6 +67,7 @@ export const mockData = {
         favorite: false,
         isNew: false,
         onMarket: true,
+        moveInDate: "12/3/2034",
     },
     {
         location: "Upper East Side",
