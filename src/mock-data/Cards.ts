@@ -1,6 +1,6 @@
 export const mockData = {
     SkinnyCardDetailsInput: [{
-        location: "1bushwick",
+        location: "Bushwick",
         streetAddress: "24 cornelia st apt 2",
         price: 5500,
         fee: true,
