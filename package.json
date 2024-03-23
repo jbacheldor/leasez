@@ -24,17 +24,15 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-scripts start CI=False",
-        "build": "react-scripts build CI=False",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
     "compilerOptions": {
-        "plugins": [
-            {
-                "name": "typescript-plugin-css-modules"
-            }
-        ]
+        "plugins": [{
+            "name": "typescript-plugin-css-modules"
+        }]
     },
     "eslintConfig": {
         "extends": [
