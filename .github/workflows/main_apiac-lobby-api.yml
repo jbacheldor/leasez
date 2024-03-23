@@ -66,4 +66,5 @@ jobs:
         with:
           app-name: 'apiac-lobby-api'
           package: .
+          slot-name: 'Production'
           
