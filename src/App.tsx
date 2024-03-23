@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import store from './store';
 import { IStoreState } from "./Types";
 import { stateActions } from './store/ActionKeys/actionkeys';
+import "./App.css";
 
 export const SwitchRoutes: React.FC = () => {
   return (

@@ -18,3 +18,11 @@ export const OnMarketFlag:React.FC = () => {
         </div>
     );
 };
+
+export const NoFeeFlag:React.FC = () => {
+    return (
+        <div className="noFeeFlagBox">
+            NO FEE
+        </div>
+    );
+};

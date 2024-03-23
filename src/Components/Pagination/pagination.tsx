@@ -37,10 +37,12 @@ export const Pagination:React.FC = () =>{
     }
 
     const handleBackPage = () => {
-        dispatch({paginationState, type: pageActions.BACK_PAGE});
+        if(paginationStateReducer.currentPage !<= 1){
+            dispatch({paginationState, type: pageActions.BACK_PAGE});
+        }
     }
 
-    const rowOptions = [1, 5, 10, 15];
+    const rowOptions = [5, 10, 15, 20];
 
     return(
         <div className="paginationMain">

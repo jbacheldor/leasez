@@ -8,7 +8,6 @@ const appStateReducer = (
 ): IApplicationState => {
     switch(action.type) {
         case stateActions.NAV_TOGGLE:
-
             return {
                 ...state,
                 navigationOpen: !state.navigationOpen,

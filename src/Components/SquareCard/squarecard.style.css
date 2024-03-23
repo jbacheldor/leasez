@@ -11,21 +11,6 @@
     box-shadow:  6px 6px 2px 1px rgba(74, 206, 206, 0.774);
 }
 
-.heartlocationSq{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex: 1 0 auto;
-}
-
-.flagPositionSquare {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    display: flex;
-    align-items: flex-start;
-}
-
 .cardGrids{
     display: flex;
     flex-direction: row;
@@ -40,19 +25,41 @@
     flex-direction: row;
 }
 
-.leasePicture {
-    max-width: 120px;
-    max-height: 120px;
-}
-
 .cardGridSq {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    margin: 20px;
+    /* align-items: center; */
     flex: 1 0 auto;
+}
+
+.separator {
+    height: 70%;
+    display: flex;
+    align-self: normal;
+    border-left: 5px solid rgba(128, 128, 128, 0.772);
+    /* margin: 15px; */
+}
+
+/* Card Data formatting starts here */
+
+.data {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.topData {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomData {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px 0 0;
+    margin-top: 25px;
+    align-items: center;
 }
 
 .newFlagSq {
@@ -61,4 +68,71 @@
 
 .onMarketFlagSq {
     padding-left: 150px;
+}
+
+
+.heartlocationSq{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+}
+
+.flagPositionSquare {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+}
+
+.leasePicture {
+    max-height: 140px;
+    max-width: inherit;
+    display: flex;
+    flex-grow: 1;
+    width: 260px;
+    margin: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.location {
+    color: rgb(97, 96, 96);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.priceRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 7px 0 7px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.streetAddress {
+    color: rgb(32, 140, 255);
+    font-size: 18px;
+}
+
+.beds {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.baths {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
