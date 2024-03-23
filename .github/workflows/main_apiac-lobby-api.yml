@@ -65,5 +65,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'apiac-lobby-api'
-          slot-name: 'production'
+          slot-name: 'Production'
           package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_547D6DEFFAB04544A16AF0E5DA035B01 }}
