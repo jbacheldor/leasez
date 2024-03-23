@@ -30,9 +30,11 @@
         "eject": "react-scripts eject"
     },
     "compilerOptions": {
-        "plugins": [{
-            "name": "typescript-plugin-css-modules"
-        }]
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ]
     },
     "eslintConfig": {
         "extends": [
